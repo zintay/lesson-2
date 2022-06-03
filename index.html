@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		//пример 1
+		let a = 1, b = 1, c, d;
+		c = ++a;
+		alert(c); // ответ: 2
+		// префиксная форма возвращает новое значение
+
+		//пример 2
+		d = b++;
+		alert(d); //ответ: 1
+		// постфиксная форма возвращает старое значение
+
+		//пример 3
+		c = 2 + ++a;
+		alert(c); //ответ: 5
+		// a уже был увеличен на один в первом примере, тут он увеличивается еще на один(префиксная форма)
+
+		//пример 4
+		d = 2 + b++;
+		alert(d); //ответ: 4
+		// b уже был увеличен на один  во втором примере, тут переменная b увеличится еще на один только после сложения, то есть d = 2 + 2; и только потом b = 3;
+		alert(a); //3
+		alert(b); //3
+	</script>
+</body>
+
+</html>
