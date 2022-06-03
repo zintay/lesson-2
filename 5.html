@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		function plus(a, b) {
+			return a + b;
+		}
+		function minus(a, b) {
+			return a - b;
+		}
+		function delenie(a, b) {
+			return a / b;
+		}
+		function umnojenit(a, b) {
+			return a * b;
+		}
+		function mathOperation(arg1, arg2, operation) {
+			switch (operation) {
+				case "+":
+					return plus(arg1, arg2);
+				case "-":
+					return minus(arg1, arg2);
+				case "/":
+					return delenie(arg1, arg2);
+				case "*":
+					return umnojenit(arg1, arg2);
+				default:
+					alert("операция не найдена");
+
+			}
+		}
+	</script>
+</body>
+
+</html>
